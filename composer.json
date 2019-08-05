@@ -3,10 +3,11 @@
 	"description": "Yii2 Barion Extension",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","barion","online payment"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Zoltan Gere",
-            "email": "gere.zoltan@e-dog.hu"
+            "email": "gggzzz3@gmail.com"
         }
     ],
     "minimum-stability": "dev",

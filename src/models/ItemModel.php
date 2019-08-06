@@ -1,6 +1,6 @@
 <?php
-namespace Barion\models;
-use Barion\helpers\iBarionModel;
+namespace zoge\barion\models;
+use zoge\barion\helpers\iBarionModel;
 
 class ItemModel implements iBarionModel
 {

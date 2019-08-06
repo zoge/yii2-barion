@@ -13,7 +13,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "zoge\\yii2-barion\\": "src/"
+            "zoge\\barion\\": "src/"
         }
     }
 }

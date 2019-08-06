@@ -1,5 +1,5 @@
 <?php
-namespace Barion\models;
+namespace zoge\barion\models;
 
 /**
  * Mother of all requests. For now with every request, the  credentials have to be sent as well.

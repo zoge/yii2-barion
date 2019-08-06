@@ -1,8 +1,8 @@
 <?php
-namespace Barion\models;
+namespace zoge\barion\models;
 
-use Barion\models\BaseRequestModel;
-use Barion\models\TransactionToRefundModel;
+use zoge\barion\models\BaseRequestModel;
+use zoge\barion\models\TransactionToRefundModel;
 
 class RefundRequestModel extends BaseRequestModel
 {

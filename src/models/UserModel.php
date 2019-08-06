@@ -1,9 +1,9 @@
 <?php
-namespace Barion\models;
+namespace zoge\barion\models;
 
-use Barion\models\UserNameModel;
+use zoge\barion\models\UserNameModel;
 
-use Barion\helpers\iBarionModel;
+use zoge\barion\helpers\iBarionModel;
 
 class UserModel implements iBarionModel
 {

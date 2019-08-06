@@ -1,8 +1,8 @@
 <?php
-namespace Barion\models;
+namespace zoge\barion\models;
 
-use Barion\models\ItemModel;
-use Barion\models\PayeeTransactionModel;
+use zoge\barion\models\ItemModel;
+use zoge\barion\models\PayeeTransactionModel;
 
 class PaymentTransactionModel
 {

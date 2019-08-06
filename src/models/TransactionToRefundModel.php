@@ -1,5 +1,5 @@
 <?php
-namespace Barion\models;
+namespace zoge\barion\models;
 
 class TransactionToRefundModel
 {

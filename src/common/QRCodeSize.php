@@ -1,5 +1,5 @@
 <?php
-namespace Barion\common;
+namespace zoge\barion\common;
 
 abstract class QRCodeSize {
     const Small = "Small";

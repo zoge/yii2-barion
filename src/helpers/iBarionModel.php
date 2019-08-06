@@ -1,5 +1,5 @@
 <?php
-namespace Barion\helpers;
+namespace zoge\barion\helpers;
 
 interface iBarionModel
 {

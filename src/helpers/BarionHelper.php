@@ -3,7 +3,7 @@
 /*
 *  Helper functions
 */
-namespace Barion;
+namespace zoge\barion\helpers;
 
 function jget($json, $propertyName)
 {

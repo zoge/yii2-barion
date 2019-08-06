@@ -1,6 +1,6 @@
 <?php
-namespace Barion\models;
-use Barion\models\BaseRequestModel;
+namespace zoge\barion\models;
+use zoge\barion\models\BaseRequestModel;
 
 class PaymentStateRequestModel extends BaseRequestModel
 {

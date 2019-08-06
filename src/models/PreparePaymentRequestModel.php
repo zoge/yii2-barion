@@ -1,11 +1,11 @@
 <?php
-namespace Barion\models;
+namespace zoge\barion\models;
 
-use Barion\models\BaseRequestModel;
-use Barion\models\PaymentTransactionModel;
+use zoge\barion\models\BaseRequestModel;
+use zoge\barion\models\PaymentTransactionModel;
 
-use Barion\common\PaymentType;
-use Barion\common\FundingSourceType;
+use zoge\barion\common\PaymentType;
+use zoge\barion\common\FundingSourceType;
 
 
 class PreparePaymentRequestModel extends BaseRequestModel

@@ -1,8 +1,8 @@
 <?php
-namespace Barion\models;
+namespace zoge\barion\models;
 
-use Barion\models\BaseRequestModel;
-use Barion\models\PaymentTransactionModel;
+use zoge\barion\models\BaseRequestModel;
+use zoge\barion\models\PaymentTransactionModel;
 
 class FinishReservationRequestModel extends BaseRequestModel
 {

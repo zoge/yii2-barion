@@ -1,7 +1,7 @@
 <?php
-namespace Barion\models;
+namespace zoge\barion\models;
 
-use Barion\helpers\iBarionModel;
+use zoge\barion\helpers\iBarionModel;
 
 class TransactionResponseModel implements iBarionModel
 {

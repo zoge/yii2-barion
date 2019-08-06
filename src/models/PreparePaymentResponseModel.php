@@ -1,10 +1,10 @@
 <?php
-namespace Barion\models;
+namespace zoge\barion\models;
 
-use Barion\models\BaseResponseModel;
-use Barion\models\TransactionResponseModel;
+use zoge\barion\models\BaseResponseModel;
+use zoge\barion\models\TransactionResponseModel;
 
-use Barion\helpers\iBarionModel;
+use zoge\barion\helpers\iBarionModel;
 
 class PreparePaymentResponseModel extends BaseResponseModel implements iBarionModel
 {

@@ -1,7 +1,7 @@
 <?php
-namespace Barion\models;
-use Barion\models\BaseResponseModel;
-use Barion\helpers\iBarionModel;
+namespace zoge\barion\models;
+use zoge\barion\models\BaseResponseModel;
+use zoge\barion\helpers\iBarionModel;
 
 class PaymentStateResponseModel extends BaseResponseModel implements iBarionModel
 {

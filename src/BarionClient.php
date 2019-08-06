@@ -6,25 +6,20 @@
 *  PHP library for implementing REST API calls towards the Barion payment system.  
 *  
 */
-namespace Barion;
+namespace zoge\barion;
 
-use Barion\models\PreparePaymentRequestModel;
-use Barion\models\PreparePaymentResponseModel;
-use Barion\models\FinishReservationRequestModel;
-use Barion\models\FinishReservationResponseModel;
-use Barion\models\RefundRequestModel;
-use Barion\models\RefundResponseModel;
-use Barion\models\PaymentStateRequestModel;
-use Barion\models\PaymentStateResponseModel;
-use Barion\models\PaymentQRRequestModel;
+use zoge\barion\models\PreparePaymentRequestModel;
+use zoge\barion\models\PreparePaymentResponseModel;
+use zoge\barion\models\FinishReservationRequestModel;
+use zoge\barion\models\FinishReservationResponseModel;
+use zoge\barion\models\RefundRequestModel;
+use zoge\barion\models\RefundResponseModel;
+use zoge\barion\models\PaymentStateRequestModel;
+use zoge\barion\models\PaymentStateResponseModel;
+use zoge\barion\models\PaymentQRRequestModel;
 
-use Barion\common\BarionEnvironment;
-use Barion\common\FundingSourceType;
-use Barion\common\PaymentStatus;
-use Barion\common\PaymentType;
-use Barion\common\QRCodeSize;
-use Barion\common\RecurrenceResult;
-use Barion\common\UILocale;
+use zoge\barion\common\BarionEnvironment;
+use zoge\barion\common\QRCodeSize;
 
 DEFINE("BARION_API_URL_PROD", "https://api.barion.com/");
 DEFINE("BARION_WEB_URL_PROD", "https://secure.barion.com/Pay");

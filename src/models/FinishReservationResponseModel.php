@@ -1,8 +1,8 @@
 <?php
-namespace Barion\models;
+namespace zoge\barion\models;
 
-use Barion\models\BaseResponseModel;
-use Barion\helpers\iBarionModel;
+use zoge\barion\models\BaseResponseModel;
+use zoge\barion\helpers\iBarionModel;
 
 class FinishReservationResponseModel extends BaseResponseModel implements iBarionModel
 {

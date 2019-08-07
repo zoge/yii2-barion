@@ -37,7 +37,7 @@ use zoge\barion\models\PaymentQRRequestModel;
 use zoge\barion\common\BarionEnvironment;
 use zoge\barion\common\QRCodeSize;
 
-DDEFINE("BARION_API_URL_PROD", "https://api.barion.com");
+DEFINE("BARION_API_URL_PROD", "https://api.barion.com");
 DEFINE("BARION_WEB_URL_PROD", "https://secure.barion.com/Pay");
 DEFINE("BARION_API_URL_TEST", "https://api.test.barion.com");
 DEFINE("BARION_WEB_URL_TEST", "https://secure.test.barion.com/Pay");

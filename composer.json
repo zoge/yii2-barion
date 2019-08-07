@@ -1,4 +1,4 @@
-{
+git {
     "name": "zoge/yii2-barion",
 	"description": "Yii2 Barion Extension",
     "type": "yii2-extension",

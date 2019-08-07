@@ -1,5 +1,7 @@
 <?php
 
+namespace zoge\barion\helpers;
+
 /**
  * Copyright 2016 Barion Payment Inc. All Rights Reserved.
  * <p/>
@@ -18,10 +20,9 @@
  * @param $propertyName
  * @return null
  */
-
 /*
-*  Helper functions
-*/
+ *  Helper functions
+ */
 
 /**
  * Gets the value of the specified property from the json
@@ -30,7 +31,10 @@
  * @param string $propertyName
  * @return null The value of the property
  */
-function jget($json, $propertyName)
-{
-    return isset($json[$propertyName]) ? $json[$propertyName] : null;
+class BarionHelper {
+
+	public static function jget($json, $propertyName) {
+		return isset($json[$propertyName]) ? $json[$propertyName] : null;
+	}
+
 }

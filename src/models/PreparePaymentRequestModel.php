@@ -1,5 +1,8 @@
 <?php
 namespace zoge\barion\models;
+use \zoge\barion\common\PaymentType;
+use \zoge\barion\common\FundingSourceType;
+use \zoge\barion\common\Currency;
 
 /**
  * Copyright 2016 Barion Payment Inc. All Rights Reserved.

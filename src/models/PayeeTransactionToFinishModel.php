@@ -1,5 +1,5 @@
 <?php
-
+namespace zoge\barion\models;
 /**
  * Copyright 2016 Barion Payment Inc. All Rights Reserved.
  * <p/>
@@ -15,18 +15,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+class PayeeTransactionToFinishModel
+{
+    public $TransactionId;
+    public $Total;
+    public $Comment;
 
-/* URL constants for Barion API communication */
-
-DEFINE("BARION_API_URL_PROD", "https://api.barion.com");
-DEFINE("BARION_WEB_URL_PROD", "https://secure.barion.com/Pay");
-DEFINE("BARION_API_URL_TEST", "https://api.test.barion.com");
-DEFINE("BARION_WEB_URL_TEST", "https://secure.test.barion.com/Pay");
-
-DEFINE("API_ENDPOINT_PREPAREPAYMENT", "/Payment/Start");
-DEFINE("API_ENDPOINT_PAYMENTSTATE", "/Payment/GetPaymentState");
-DEFINE("API_ENDPOINT_QRCODE", "/QR/Generate");
-DEFINE("API_ENDPOINT_REFUND", "/Payment/Refund");
-DEFINE("API_ENDPOINT_FINISHRESERVATION", "/Payment/FinishReservation");
-
-DEFINE("PAYMENT_URL", "/Pay");
+    function __construct()
+    {
+        $this->TransactionId = "";
+        $this->Total = 0;
+        $this->Comment = "";
+    }
+}

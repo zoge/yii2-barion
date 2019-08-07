@@ -1,11 +1,21 @@
 <?php
 namespace zoge\barion\models;
 
-use zoge\barion\models\BaseResponseModel;
-use zoge\barion\models\TransactionResponseModel;
-
-use zoge\barion\helpers\iBarionModel;
-
+/**
+ * Copyright 2016 Barion Payment Inc. All Rights Reserved.
+ * <p/>
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * <p/>
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * <p/>
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 class PreparePaymentResponseModel extends BaseResponseModel implements iBarionModel
 {
     public $PaymentId;
@@ -32,11 +42,11 @@ class PreparePaymentResponseModel extends BaseResponseModel implements iBarionMo
     {
         if (!empty($json)) {
             parent::fromJson($json);
-            $this->PaymentId = $json['PaymentId'];
-            $this->PaymentRequestId = $json['PaymentRequestId'];
-            $this->Status = $json['Status'];
-            $this->QRUrl = $json['QRUrl'];
-            $this->RecurrenceResult = $json['RecurrenceResult'];
+            $this->PaymentId = jget($json, 'PaymentId');
+            $this->PaymentRequestId = jget($json, 'PaymentRequestId');
+            $this->Status = jget($json, 'Status');
+            $this->QRUrl = jget($json, 'QRUrl');
+            $this->RecurrenceResult = jget($json, 'RecurrenceResult');
             $this->Transactions = array();
 
             if (!empty($json['Transactions'])) {
@@ -46,9 +56,7 @@ class PreparePaymentResponseModel extends BaseResponseModel implements iBarionMo
                     array_push($this->Transactions, $tr);
                 }
             }
-            
+
         }
     }
 }
-
-?>

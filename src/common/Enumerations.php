@@ -1,6 +1,7 @@
 <?php
 
-abstract class BarionEnvironment {
+abstract class BarionEnvironment
+{
     const Test = "test";
     const Prod = "prod";
 }
@@ -24,32 +25,70 @@ abstract class PaymentStatus
     const Prepared = "Prepared";
     // 20
     const Started = "Started";
-    // 30
+    // 21
+    const InProgress = "InProgress";
+    // 25
     const Reserved = "Reserved";
-    // 40
+    // 30
     const Canceled = "Canceled";
-    // 50
+    // 40
     const Succeeded = "Succeeded";
-    // 60
+    // 50
     const Failed = "Failed";
+    // 60
+    const PartiallySucceeded = "PartiallySucceeded";
+    // 70
+    const Expired = "Expired";
 }
 
-abstract class QRCodeSize {
+abstract class QRCodeSize
+{
     const Small = "Small";
     const Normal = "Normal";
     const Large = "Large";
 }
 
-abstract class RecurrenceResult {
+abstract class RecurrenceResult
+{
     const None = "None";
     const Successful = "Successful";
     const Failed = "Failed";
     const NotFound = "NotFound";
 }
 
-abstract class UILocale {
+abstract class UILocale
+{
     const HU = "hu-HU";
     const EN = "en-US";
+    const DE = "de-DE";
+    const SL = "sl-SI";
+    const SK = "sk-SK";
+    const FR = "fr-FR";
+    const CZ = "cs-CZ";
+    const GR = "el-GR";
 }
 
-?>
+abstract class Currency
+{
+    const HUF = "HUF";
+    const EUR = "EUR";
+    const USD = "USD";
+    const CZK = "CZK";
+
+    public static function isValid($name)
+    {
+        $class = new ReflectionClass(__CLASS__);
+        $constants = $class->getConstants();
+        return array_key_exists($name, $constants);
+    }
+}
+
+abstract class CardType
+{
+    const Unknown = "Unknown";
+    const Mastercard = "Mastercard";
+    const Maestro = "Maestro";
+    const Visa = "Visa";
+    const Electron = "Electron";
+    const AmericanExpress = "AmericanExpress";
+}

@@ -79,32 +79,32 @@ class PaymentStateResponseModel extends BaseResponseModel implements iBarionMode
         if (!empty($json)) {
             parent::fromJson($json);
 
-            $this->PaymentId = jget($json, 'PaymentId');
-            $this->PaymentRequestId = jget($json, 'PaymentRequestId');
-            $this->OrderNumber = jget($json, 'OrderNumber');
-            $this->POSId = jget($json, 'POSId');
-            $this->POSName = jget($json, 'POSName');
-            $this->POSOwnerEmail = jget($json, 'POSOwnerEmail');
-            $this->Status = jget($json, 'Status');
-            $this->PaymentType = jget($json, 'PaymentType');
-            $this->FundingSource = jget($json, 'FundingSource');
+            $this->PaymentId = BarionHelper::jget($json, 'PaymentId');
+            $this->PaymentRequestId = BarionHelper::jget($json, 'PaymentRequestId');
+            $this->OrderNumber = BarionHelper::jget($json, 'OrderNumber');
+            $this->POSId = BarionHelper::jget($json, 'POSId');
+            $this->POSName = BarionHelper::jget($json, 'POSName');
+            $this->POSOwnerEmail = BarionHelper::jget($json, 'POSOwnerEmail');
+            $this->Status = BarionHelper::jget($json, 'Status');
+            $this->PaymentType = BarionHelper::jget($json, 'PaymentType');
+            $this->FundingSource = BarionHelper::jget($json, 'FundingSource');
             if(!empty($json['FundingInformation'])) {
                 $this->FundingInformation = new FundingInformationModel();
-                $this->FundingInformation->fromJson(jget($json, 'FundingInformation'));
+                $this->FundingInformation->fromJson(BarionHelper::jget($json, 'FundingInformation'));
             }
-            $this->AllowedFundingSources = jget($json, 'AllowedFundingSources');
-            $this->GuestCheckout = jget($json, 'GuestCheckout');
-            $this->CreatedAt = jget($json, 'CreatedAt');
-            $this->ValidUntil = jget($json, 'ValidUntil');
-            $this->CompletedAt = jget($json, 'CompletedAt');
-            $this->ReservedUntil = jget($json, 'ReservedUntil');
-            $this->Total = jget($json, 'Total');
-            $this->Currency = jget($json, 'Currency');
-            $this->RecurrenceResult = jget($json, 'RecurrenceResult');
-            $this->SuggestedLocale = jget($json, 'SuggestedLocale');
-            $this->FraudRiskScore = jget($json, 'FraudRiskScore');
-            $this->RedirectUrl = jget($json, 'RedirectUrl');
-            $this->CallbackUrl = jget($json, 'CallbackUrl');
+            $this->AllowedFundingSources = BarionHelper::jget($json, 'AllowedFundingSources');
+            $this->GuestCheckout = BarionHelper::jget($json, 'GuestCheckout');
+            $this->CreatedAt = BarionHelper::jget($json, 'CreatedAt');
+            $this->ValidUntil = BarionHelper::jget($json, 'ValidUntil');
+            $this->CompletedAt = BarionHelper::jget($json, 'CompletedAt');
+            $this->ReservedUntil = BarionHelper::jget($json, 'ReservedUntil');
+            $this->Total = BarionHelper::jget($json, 'Total');
+            $this->Currency = BarionHelper::jget($json, 'Currency');
+            $this->RecurrenceResult = BarionHelper::jget($json, 'RecurrenceResult');
+            $this->SuggestedLocale = BarionHelper::jget($json, 'SuggestedLocale');
+            $this->FraudRiskScore = BarionHelper::jget($json, 'FraudRiskScore');
+            $this->RedirectUrl = BarionHelper::jget($json, 'RedirectUrl');
+            $this->CallbackUrl = BarionHelper::jget($json, 'CallbackUrl');
 
             $this->Transactions = array();
 

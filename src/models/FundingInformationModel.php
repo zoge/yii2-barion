@@ -1,5 +1,8 @@
 <?php
 namespace zoge\barion\models;
+use \zoge\barion\helpers\iBarionModel;
+use \zoge\barion\helpers\BarionHelper;
+use \zoge\barion\models\BankCardModel;
 /**
  * Copyright 2016 Barion Payment Inc. All Rights Reserved.
  * <p/>
@@ -31,7 +34,7 @@ class FundingInformationModel implements iBarionModel
         if (!empty($json)) {
             $this->BankCard = new BankCardModel();
             $this->BankCard->fromJson(jget($json, 'BankCard'));
-            $this->AuthorizationCode = jget($json, 'AuthorizationCode');
+            $this->AuthorizationCode = BarionHelper::jget($json, 'AuthorizationCode');
         }
     }
 }

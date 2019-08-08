@@ -33,7 +33,7 @@ class RefundResponseModel extends BaseResponseModel implements iBarionModel
         if (!empty($json)) {
             parent::fromJson($json);
 
-            $this->PaymentId = jget($json, 'PaymentId');
+            $this->PaymentId = BarionHelper::jget($json, 'PaymentId');
             $this->RefundedTransactions = array();
 
             if (!empty($json['RefundedTransactions'])) {

@@ -1,7 +1,7 @@
 <?php
 namespace zoge\barion\models;
-use zoge\barion\models\BaseResponseModel;
 use zoge\barion\helpers\iBarionModel;
+use \zoge\barion\helpers\BarionHelper;
 
 /**
  * Copyright 2016 Barion Payment Inc. All Rights Reserved.
